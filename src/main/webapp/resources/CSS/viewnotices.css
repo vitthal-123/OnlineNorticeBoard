@@ -1,0 +1,132 @@
+/* Remove any unnecessary height settings */
+body, h2 {
+	margin: 0;
+	padding: 0;
+}
+
+/* Body style */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Container style */
+.container {
+	max-width: 100%;
+	animation: fadeIn 1s ease-in;
+}
+
+/* Event List heading style */
+.container h2 {
+	background-color: #007bff;
+	color: white;
+	padding: 10px 15px;
+	margin-bottom: 15px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 24px;
+	font-weight:bold;
+	position: sticky; /* Sticky position */
+	top: 0; /* Stick to the top */
+	z-index: 100; /* Ensure it stays on top of other elements */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow when sticky */
+	
+}
+.navbar h2 {
+	margin: 2px;
+	
+}
+/* Table style */
+.table {
+	width: 100%;
+	margin-bottom: 1rem;
+	color: #212529;
+	background-color: #fff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	animation: fadeIn 1s ease-in;
+}
+
+/* Table header style */
+.thead-dark th {
+	background-color: #343a40;
+	color: white;
+}
+
+/* Button style */
+.btn-primary, .btn-danger {
+	font-size: 14px;
+	margin-right: 5px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover, .btn-danger:hover {
+	transform: scale(1.05);
+}
+
+.btn-primary:active, .btn-danger:active {
+	transform: scale(0.95);
+}
+
+/* Responsive design for small screens */
+@media ( max-width : 768px) {
+	.container h2 {
+		font-size: 20px;
+		padding: 10px 15px;
+	}
+}
+
+/* Custom styling for notice blocks */
+.notice-block {
+	background-color: #f0f8ff; /* Light background color */
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+.notice-heading {
+	color: #007bff; /* Heading color */
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.notice-details {
+	color: #333; /* Text color */
+	font-size: 1em;
+}
+
+.btn-toggle {
+	color: #fff;
+	background-color: #28a745; /* Green button color */
+	border: none;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn-toggle:hover {
+	background-color: #218838;
+}
+
+/* Pagination styles */
+.pagination {
+	justify-content: center;
+}
+
+.page-item.active .page-link {
+	background-color: #007bff;
+	border-color: #007bff;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+	from {
+	 opacity:0;
+    }
+    to {
+	  opacity: 1;
+    }
+}

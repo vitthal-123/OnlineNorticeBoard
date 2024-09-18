@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/* Remove any unnecessary height settings */
+body, h2 {
+	margin: 0;
+	padding: 0;
+}
+
+/* Body style */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden; /* Prevent horizontal scroll */
+}
+.navbar {
+	position: sticky;
+	top: 0;
+	background-color: #0080ff;
+	color: white;
+    padding-left: 550px; 
+	margin-bottom: 20px;
+	z-index: 1; /* Add this property */
+	border-radius: 5px;
+	font-size: 20px;
+	
+}
+.navbar h2 {
+	text-align: center;
+	font-size: 1.2em;	
+	font-weight: bold; 
+}
+/* Container style */
+.container {
+	max-width: 100%;
+	animation: fadeIn 1s ease-in;
+}
+
+/* Event List heading style */
+/* .container h2 {
+	background-color: #008080;
+	color: white;
+	padding: 10px 15px;
+	margin-bottom: 20px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 24px;
+} */
+
+/* Notice block style */
+.notice-block {
+	background-color: #f0f8ff; /* Light background color */
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+.notice-heading {
+	color: #007bff; /* Heading color */
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.notice-details {
+	color: #333; /* Text color */
+	font-size: 1em;
+}
+
+.actions {
+	margin-top: 10px;
+}
+
+.actions a {
+	margin-right: 10px;
+}
+.btn-toggle {
+	border-radius: 5px;
+	border:none;
+	background-color:gray;
+	color: #fff;
+	text-align:center;
+	padding: 7px 18px;
+	
+}
+/* Button style */
+.btn-primary, .btn-danger {
+	font-size: 14px;
+	margin-right: 5px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover, .btn-danger:hover {
+	transform: scale(1.05);
+}
+
+.btn-primary:active, .btn-danger:active {
+	transform: scale(0.95);
+}
+
+/* Responsive design for small screens */
+@media ( max-width : 768px) {
+	.container h2 {
+		font-size: 20px;
+		padding: 10px 15px;
+	}
+}
+
+/* Pagination styles */
+.pagination {
+	justify-content: center;
+}
+
+.page-item.active .page-link {
+	background-color: #007bff;
+	border-color: #007bff;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+	from {
+	 opacity:0;
+    }
+    to {
+	  opacity: 1;
+    }
+}
